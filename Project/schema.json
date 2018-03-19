@@ -1,6 +1,6 @@
 {
   "table":{
-    "rows":8,
+    "rows":800,
     "columns":4
   },
   "columns":{
@@ -13,26 +13,24 @@
     "type":"Int",
     "range":[1,5],
     "distribution":"uniform",
-    "n":6,
-    "n_NULL":1
+    "n":600
   },
   "Prop2":{
     "type":"Float",
     "range":[1.0,5.0],
     "distribution":"gaussian",
-    "n":7,
-    "n_NULL":1
+    "n":700
   },
   "Prop3":{
     "type":"String",
-    "matching_regex":["/json/([a-z]+)"],
-    "n":5,
-    "n_NULL":2
+    "matching_regex":["aa[a-z]+"],
+    "limit":4,
+    "k":4,
+    "n":798
   },
   "Prop4":{
     "type":"Boolean",
-    "n":10,
-    "n_true":4,
-    "n_NULL":6
+    "n":500,
+    "n_true":400
   }
 }
