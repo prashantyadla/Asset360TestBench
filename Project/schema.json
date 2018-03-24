@@ -13,24 +13,29 @@
     "type":"Int",
     "range":[1,5],
     "distribution":"uniform",
-    "n":600
+    "n":600,
+    "exec":10
   },
   "Prop2":{
     "type":"Float",
-    "range":[1.0,5.0],
-    "distribution":"gaussian",
-    "n":700
+    "mean":5,
+    "stddev":0.5,
+    "distribution":"normal",
+    "n":700,
+    "exec":10
   },
   "Prop3":{
     "type":"String",
     "matching_regex":["aa[a-z]+"],
     "limit":4,
     "k":4,
-    "n":798
+    "n":798,
+    "exec":10
   },
   "Prop4":{
     "type":"Boolean",
     "n":500,
-    "n_true":400
+    "n_true":400,
+    "exec":10
   }
 }
